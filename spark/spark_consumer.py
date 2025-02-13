@@ -27,6 +27,7 @@ logs_df = logs_df.withColumn("timestamp", expr("split(log_message, ' - ')[0]")) 
 query = logs_df.writeStream \
     .outputMode("append") \
     .format("console") \
+    .trigger(processingTime="5 seconds")
     .start()
 
 query.awaitTermination()
