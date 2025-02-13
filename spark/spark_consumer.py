@@ -20,11 +20,10 @@ logs_df = logs_df.withColumn("timestamp", expr("split(log_message, ' - ')[0]")) 
                  .withColumn("message", expr("split(log_message, ' - ')[2]")) \
                  .drop("log_message")
 
-# Print structured logs to console with a 5-second update interval
+# Print structured logs to console
 query = logs_df.writeStream \
     .outputMode("append") \
     .format("console") \
-    .trigger(processingTime="5 seconds") \  # Update every 5 seconds
     .start()
 
 query.awaitTermination()
