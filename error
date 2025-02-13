@@ -1,7 +1,7 @@
 ubh01@ubh01:~/sunil/interimProject$ python3 spark/spark_consumer.py 
-25/02/13 23:18:58 WARN Utils: Your hostname, ubh01 resolves to a loopback address: 127.0.1.1; using 10.0.2.15 instead (on interface enp0s3)
-25/02/13 23:18:58 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
-25/02/13 23:18:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/02/13 23:22:46 WARN Utils: Your hostname, ubh01 resolves to a loopback address: 127.0.1.1; using 10.0.2.15 instead (on interface enp0s3)
+25/02/13 23:22:46 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+25/02/13 23:22:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
 Setting default log level to "WARN".
 To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
