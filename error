@@ -1,5 +1,4 @@
-  File "kafka/kafka_producer.py", line 13
-    timestamp = datetfrom kafka import KafkaProducer
-                              ^
+  File "kafka/kafka_producer.py", line 15
+    message = f'{timestamp} - {log_level} - Sample log message'
+                                                              ^
 SyntaxError: invalid syntax
-
