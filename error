@@ -1,4 +1,5 @@
-  File "kafka/kafka_producer.py", line 15
-    message = f'{timestamp} - {log_level} - Sample log message'
-                                                              ^
-SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "spark/spark_consumer.py", line 3, in <module>
+    from pyspark.streaming.kafka import KafkaUtils
+ModuleNotFoundError: No module named 'pyspark.streaming.kafka'
+ubh01@ubh01:~/sunil/interimProject$ 
