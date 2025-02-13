@@ -1,4 +1,21 @@
+ubh01@ubh01:~/sunil/interimProject$ python spark/spark_consumer.py 
+25/02/14 00:31:39 WARN Utils: Your hostname, ubh01 resolves to a loopback address: 127.0.1.1; using 10.0.2.15 instead (on interface enp0s3)
+25/02/14 00:31:39 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+25/02/14 00:31:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+/home/ubh01/.local/lib/python2.7/site-packages/pyspark/context.py:227: DeprecationWarning: Support for Python 2 and Python 3 prior to version 3.6 is deprecated as of Spark 3.0. See also the plan for dropping Python 2 support at https://spark.apache.org/news/plan-for-dropping-python-2-support.html.
+  DeprecationWarning)
 Traceback (most recent call last):
-  File "spark/spark_consumer.py", line 1, in <module>
-    from pyspark.sql import SparkSession
-ModuleNotFoundError: No module named 'pyspark'
+  File "spark/spark_consumer.py", line 12, in <module>
+    .option("subscribe", "server-logs") \
+  File "/home/ubh01/.local/lib/python2.7/site-packages/pyspark/sql/streaming.py", line 420, in load
+    return self._df(self._jreader.load())
+  File "/home/ubh01/.local/lib/python2.7/site-packages/py4j/java_gateway.py", line 1305, in __call__
+    answer, self.gateway_client, self.target_id, self.name)
+  File "/home/ubh01/.local/lib/python2.7/site-packages/pyspark/sql/utils.py", line 134, in deco
+    raise_from(converted)
+  File "/home/ubh01/.local/lib/python2.7/site-packages/pyspark/sql/utils.py", line 33, in raise_from
+    raise e
+pyspark.sql.utils.AnalysisException: Failed to find data source: kafka. Please deploy the application as per the deployment section of "Structured Streaming + Kafka Integration Guide".;
