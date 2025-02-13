@@ -1,1 +1,5 @@
+  File "kafka/kafka_producer.py", line 13
+    timestamp = datetfrom kafka import KafkaProducer
+                              ^
+SyntaxError: invalid syntax
 
