@@ -60,3 +60,8 @@ def consume_logs():
 # Main function
 if __name__ == "__main__":
     consume_logs()
+
+
+
+#spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.3 kafka_spark_log_analyzer.py
+
